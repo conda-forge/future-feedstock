@@ -23,6 +23,7 @@ requirements:
   build:
     - python
     - setuptools
+
   run:
     - python
 
@@ -30,6 +31,7 @@ test:
   commands:
     - futurize -h
     - pasteurize -h
+
   imports:
     - future
 
@@ -46,7 +48,6 @@ about:
   dev_url: https://github.com/PythonCharmers/python-future
 
 extra:
-    recipe-maintainers:
-        - jakirkham
-        - mmysinger
-
+  recipe-maintainers:
+    - jakirkham
+    - mmysinger
