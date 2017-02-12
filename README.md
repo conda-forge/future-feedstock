@@ -14,6 +14,18 @@ Python 3. It allows you to use a single, clean Python 3.x-compatible
 codebase to support both Python 2 and Python 3 with minimal overhead.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/future-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/future-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/future-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/future-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/future-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/future-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/future/badges/version.svg)](https://anaconda.org/conda-forge/future)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/future/badges/downloads.svg)](https://anaconda.org/conda-forge/future)
+
 Installing future
 =================
 
@@ -34,7 +46,6 @@ It is possible to list all of the versions of `future` available on your platfor
 ```
 conda search future --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -70,18 +81,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/future-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/future-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/future-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/future-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/future-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/future-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/future/badges/version.svg)](https://anaconda.org/conda-forge/future)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/future/badges/downloads.svg)](https://anaconda.org/conda-forge/future)
 
 
 Updating future-feedstock
