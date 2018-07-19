@@ -17,8 +17,9 @@ codebase to support both Python 2 and Python 3 with minimal overhead.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/future-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/future-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/future-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/future-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/future-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/future-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/future-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/future-feedstock/branch/master)
 
 Current release info
 ====================
