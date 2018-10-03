@@ -10,7 +10,7 @@ source:
   sha256: e39ced1ab767b5936646cedba8bcce582398233d6a627067d4c6a454c90cfedb
 
 build:
-  number: 2
+  number: 1002
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - futurize = libfuturize.main:main
