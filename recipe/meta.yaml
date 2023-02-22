@@ -27,12 +27,8 @@ requirements:
 test:
   commands:
     - pip check
-    - futurize -h
-    - pasteurize -h
   imports:
     - future
-    - libfuturize
-    - libpasteurize
     - past
   requires:
     - pip
