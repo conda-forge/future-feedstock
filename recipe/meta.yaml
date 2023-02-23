@@ -26,6 +26,8 @@ requirements:
 
 test:
   commands:
+    - futurize -h
+    - pasteurize -h
     - pip check
   imports:
     - future
