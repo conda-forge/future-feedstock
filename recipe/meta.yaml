@@ -1,4 +1,4 @@
-{% set version = "0.18.2" %}
+{% set version = "0.18.3" %}
 
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/f/future/future-{{ version }}.tar.gz
-  sha256: b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d
+  sha256: 34a17436ed1e96697a86f9de3d15a3b0be01d8bc8de9c1dffd59fb8234ed5307
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - futurize = libfuturize.main:main
@@ -19,6 +19,7 @@ build:
 requirements:
   host:
     - python
+    - setuptools
     - pip
   run:
     - python
@@ -27,12 +28,15 @@ test:
   commands:
     - futurize -h
     - pasteurize -h
-
+    - pip check
   imports:
     - future
+    - past
+  requires:
+    - pip
 
 about:
-  home: http://python-future.org
+  home: https://python-future.org
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
@@ -41,7 +45,7 @@ about:
     Python-future  is the missing compatibility layer between Python 2 and
     Python 3. It allows you to use a single, clean Python 3.x-compatible
     codebase to support both Python 2 and Python 3 with minimal overhead.
-  doc_url: http://python-future.org
+  doc_url: https://python-future.org
   dev_url: https://github.com/PythonCharmers/python-future
 
 extra:
