@@ -1,6 +1,5 @@
 {% set version = "1.0.0" %}
 
-
 package:
   name: future
   version: {{ version }}
@@ -12,6 +11,7 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv --no-build-isolation
+
   entry_points:
     - futurize = libfuturize.main:main
     - pasteurize = libpasteurize.main:main
@@ -19,6 +19,7 @@ build:
 requirements:
   host:
     - python
+    - setuptools
     - pip
     - setuptools
     - wheel
