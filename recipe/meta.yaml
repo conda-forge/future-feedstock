@@ -6,23 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/f/future/future-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/f/future/future-{{ version }}.tar.gz
   sha256: bd2968309307861edae1458a4f8a4f3598c03be43b97521076aebf5d94c07b05
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   entry_points:
     - futurize = libfuturize.main:main
     - pasteurize = libpasteurize.main:main
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
+    - setuptools
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -36,6 +37,7 @@ test:
     - pasteurize --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://python-future.org
