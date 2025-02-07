@@ -3,7 +3,7 @@ About future-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/future-feedstock/blob/main/LICENSE.txt)
 
-Home: http://python-future.org
+Home: https://python-future.org
 
 Package license: MIT
 
@@ -11,7 +11,7 @@ Summary: Clean single-source support for Python 3 and 2
 
 Development: https://github.com/PythonCharmers/python-future
 
-Documentation: http://python-future.org
+Documentation: https://python-future.org
 
 Python-future  is the missing compatibility layer between Python 2 and
 Python 3. It allows you to use a single, clean Python 3.x-compatible
